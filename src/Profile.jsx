@@ -1,13 +1,19 @@
+// Behzad Ghabaei
+// CS 81 - JavaScript
+// Assignment 10b
+// Instructor Seno
+// 2/4/2026
 // src/Profile.jsx
+
 import React, { useState } from 'react';
 import './Profile.css'; // Optional: for basic styling
 
 /**
  * A custom profile component.
- * @param {object} props - Component props.
- * @param {string} props.name - The person's name.
- * @param {string} props.occupation - The person's occupation.
- * @param {string} props.funFact - A fun fact about the person.
+ *  {object} props - Component props.
+ *  {string} props.name - The person's name.
+ *  {string} props.occupation - The person's occupation.
+ *  {string} props.funFact - A fun fact about the person.
  */
 const Profile = ({ name, occupation, funFact }) => {
   // State to manage the visibility of the extra detail (bio/quote)
