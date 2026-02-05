@@ -1,4 +1,12 @@
+// Behzad Ghabaei
+// README.md
+// module 10b
+// Instructor Seno 
+// Feb 4, 2026
+
 # Module 10A – Profile Component with State and Props
+This particular README.md file was interesting because it was created and pushed through with git.
+There is a README.md file available in the root and .gitignore files were made to prevent user_modules from getting pushed to github. 
 
 ## Description
 This project demonstrates how to use React props and state to build an interactive profile component.
