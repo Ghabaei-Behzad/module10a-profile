@@ -1,0 +1,49 @@
+/* src/Profile.css */
+.profile-card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 20px;
+  max-width: 400px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+}
+
+.profile-name {
+  color: #333;
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.profile-occupation {
+  color: #555;
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+.profile-funfact {
+  color: #777;
+  margin-bottom: 15px;
+}
+
+.toggle-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+
+.toggle-button:hover {
+  background-color: #0056b3;
+}
+
+.profile-details {
+  border-top: 1px solid #eee;
+  padding-top: 15px;
+  margin-top: 15px;
+  font-size: 0.9rem;
+  color: #444;
+}
