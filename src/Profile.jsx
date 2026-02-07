@@ -14,12 +14,13 @@ import './Profile.css'; // Optional: for basic styling
  *  {string} props.name - The person's name.
  *  {string} props.occupation - The person's occupation.
  *  {string} props.funFact - A fun fact about the person.
+ *  included are details with the click of a button.
  */
-const Profile = ({ name, occupation, funFact }) => {
+const Profile = ({ name, occupation, funFact, details }) => {
   // State to manage the visibility of the extra detail (bio/quote)
   const [showDetails, setShowDetails] = useState(false);
 
-  // Event handler function to toggle the state
+  // Event handler function to toggle the state.  We have seen buttons that toggle to use ! in button display.
   const toggleDetails = () => {
     setShowDetails(!showDetails);
   };
@@ -29,8 +30,9 @@ const Profile = ({ name, occupation, funFact }) => {
       <h1 className="profile-name">{name}</h1>
       <p className="profile-occupation">{occupation}</p>
       <p className="profile-funfact">Fun Fact: {funFact}</p>
+      
 
-      {/* Button with an event handler */}
+      {/* Button with an event handler. Pass to toggleDetails function and ternary operator*/}
       <button onClick={toggleDetails} className="toggle-button">
         {showDetails ? 'Hide Details' : 'Show Details'}
       </button>
@@ -38,9 +40,9 @@ const Profile = ({ name, occupation, funFact }) => {
       {/* Dynamic content rendering based on state */}
       {showDetails && (
         <div className="profile-details">
-          {/* Example dynamic content - you can make this a prop if you prefer */}
+          {/* Example dynamic content - you can make this a prop if you prefer  name and details are in our button toggle.*/}
           <p>
-            {name} is an incredibly influential author whose works have shaped modern literature. They are known for their compelling narratives and intricate character development.
+            {name} {details}
           </p>
         </div>
       )}
